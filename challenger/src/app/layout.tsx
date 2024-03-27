@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "./Header/page"
 import Footer from "./Footer/page"
+import Personagens from "./Personagens/page";
 
 
 
@@ -18,7 +19,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body>
         <Header />
-        {children}
+        <Personagens />
         <Footer />
       </body>
     </html>

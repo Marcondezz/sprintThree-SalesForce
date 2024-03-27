@@ -1,0 +1,29 @@
+
+
+.navegacao-personagens{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.conjunto-propositos-personagens{
+    display: flex;
+    width: 70rem;
+    height: 20rem;
+    background-color: #669bbc;
+    border-radius: 20px;
+    padding: 10px;
+}
+.personagem-esquerda-personagens{
+    width: 80%;
+    margin: 20px;
+    border: solid red 3px;
+}
+.texto-esquerda-personagens{
+    padding: 20px;
+    border: solid red 3px;
+    width: 50rem;
+}
+.test{
+    font-size: 20px;
+}

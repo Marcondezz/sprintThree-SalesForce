@@ -45,6 +45,10 @@
     margin-left: 100px;
     margin-right: 100px;
 }
+.conjunto-imagens-paginaInicial{
+    display: flex;
+    justify-content: center;
+}
 .imagens-paginaInicial{
     padding: 50px;
 }
@@ -52,13 +56,14 @@
     background-color: #032D60;
     width: 220px;
     height: 250px;
-    
+    border-radius: 20px;
 }
 .formatacao-imagem-paginaInicial{
     width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 10px;
 }
 .texto-imagem-paginaInicial{
     display: flex;
