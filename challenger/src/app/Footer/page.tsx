@@ -1,6 +1,4 @@
 import "./css/style.css"
-import "./javascript"
-import { IoCaretDownCircleSharp } from "react-icons/io5";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";

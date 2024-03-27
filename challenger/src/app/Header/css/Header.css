@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Righteous&display=swap');
 
-:roots {
-    --azul-escuro: #032D60;
-    --branco: white;
-    --texto: "Ibarra Real Nova", serif;
-    --titulo: "Righteous", sans-serif;
-}
 .titulo1-header{
     display: flex;
     justify-content: center;

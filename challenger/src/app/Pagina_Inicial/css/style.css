@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.titulo-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: "Righteous", sans-serif;
+}
+.divOne-paginaInicial{
+    display: flex;
+    padding: 30px;
+}
+.texto-paginaInicial{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    padding: 40px;
+    font-size: 25px;
+    font-family: "Ibarra Real Nova", serif;
+}
+
+.imagem-div1-main{
+    width: 550px;
+    height: 400px;
+}
+.titulo2-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Righteous", sans-serif;
+}
+.texto2-paginaInicial{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: "Ibarra Real Nova", serif;
+    padding: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.imagens-paginaInicial{
+    padding: 50px;
+}
+.layout-imagem-paginaInicial{
+    background-color: #032D60;
+    width: 220px;
+    height: 250px;
+    
+}
+.formatacao-imagem-paginaInicial{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto-imagem-paginaInicial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Righteous", sans-serif;
+    color: white;
+    padding: 10px;
+}

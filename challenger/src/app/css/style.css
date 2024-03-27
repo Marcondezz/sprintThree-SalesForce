@@ -6,12 +6,3 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-
-.primeira-div-home{
-    display: flex;
-    justify-content: center;
-    padding: 2%;
-}
-.primeiro-titulo-home{
-    font-family: "Righteous", sans-serif;
-}
