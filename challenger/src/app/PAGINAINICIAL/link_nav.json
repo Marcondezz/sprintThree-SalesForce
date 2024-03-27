@@ -1,0 +1,17 @@
+[
+    {
+        "id" : 1,
+        "name" : "FEED",
+        "href" : "/"
+    },
+    {
+        "id" : 2,
+        "name" : "LOGIN",
+        "href" : "/Login"
+    },
+    {
+        "id" : 3,
+        "name" : "SOBRE NÓS",
+        "href" : "/SobreNos"
+    }
+]

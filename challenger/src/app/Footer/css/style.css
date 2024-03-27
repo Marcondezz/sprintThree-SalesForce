@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Righteous&display=swap');
+
+.footer-border-box{
+    display: flex;
+    align-items: center;
+    border: 5px solid #032D60;
+    height: 12rem;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 10px;
+}
+.nav-footer{
+    display: flex;
+    gap: 10px;
+}
+.trailblazers-footer{
+    display:flex;
+    align-items: center;
+    gap: 100px;
+    border: 5px solid #032D60;
+    background-color: #032D60;
+    color: white;
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-family: "Ibarra Real Nova", serif;
+}
+.contato-footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #032D60;
+    background-color: #032D60;
+    color: white;
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 30px;
+    margin-top: 10px;
+    font-family: "Ibarra Real Nova", serif;
+}
+.logo-salesforce-footer{
+   width: 150px;
+   margin: 50px;
+}
+.sustentabilidade-footer{
+    display:flex;
+    align-items: center;
+    border: 5px solid #032D60;
+    background-color: #032D60;
+    color: white;
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-family: "Ibarra Real Nova", serif;
+}
+.logos-footer{  
+}
+.instagram-footer{
+    color: #032D60;
+    font-size: 50px;
+    margin: 5px;
+    margin-left: 20px;
+}
+.facebook-footer{
+    color: #032D60;
+    font-size: 50px;
+    margin: 5px;
+}
+.youtube-footer{
+    color: #032D60;
+    font-size: 50px;
+    margin: 5px;
+}
+.dropdown-selecao{
+    margin: 10%;
+}
+.dropdown-menu{
+    list-style: none;
+}
+.logoAMR{
+    width: 220px;
+    height: 250px;
+    float: right;
+}

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Righteous&display=swap');
+
+:roots {
+    --azul-escuro: #032D60;
+    --branco: white;
+    --texto: "Ibarra Real Nova", serif;
+    --titulo: "Righteous", sans-serif;
+}
+.titulo1-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lupa-buscar-header{
+    font-size: 35px;
+    padding: 20px;
+}
+.menu-buscar-header{
+    font-size: 35px;
+    padding: 20px;
+}
+.navegacao-header{
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    height: 80px; 
+}
+.estilo-input-header{
+    width: 40%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #032D60;
+    gap: 10px;
+    margin-top: 1%;
+}
+.input-buscar-header{
+    
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-family: "Righteous", sans-serif;
+    width: 75%;
+    height: 40%;
+}
+.lupa-header{
+    color: white;
+    font-size: 30px;
+}
+.input-buscar input:focus-visible {
+    outline: none;
+}
+.menu-classico{
+    display: flex;
+    justify-content: center;
+}
+.menu-inicial-header{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    font-family: "Righteous", sans-serif;
+}
