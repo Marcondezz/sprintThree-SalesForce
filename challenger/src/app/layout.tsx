@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body>
         <Header />
-        { children }
+        <Personagens />
         <Footer />
       </body>
     </html>
