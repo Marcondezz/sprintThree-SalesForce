@@ -1,7 +1,7 @@
 import "./css/style.css"
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
+import Instagram from "./imgs/instagram.png"
+import Facebook from "./imgs/facebook.png"
+import Youtube from "./imgs/youtube.png"
 import salesforce from "./imgs/salesforce-logo.png"
 import AMR from "./imgs/AMR.png"
 
@@ -22,9 +22,11 @@ const Footer = () => {
                         </div>
                         <div className="logos-footer">
                             <p className="sustentabilidade-footer">Sustentabilidade</p>
-                            <a className="instagram-footer"><FaInstagram /></a>
-                            <a className="facebook-footer"><FaFacebook /></a>
-                            <a className="youtube-footer"><FaYoutube /></a>
+                            <div className="todas-redesSociais-footer">
+                                <a className="instagram-footer"><img src={ Instagram.src } className="redes-sociais-icone"/></a>
+                                <a className="facebook-footer"><img src={ Facebook.src } className="redes-sociais-icone"/></a>
+                                <a className="youtube-footer"><img src={ Youtube.src } className="youtube-icone"/></a>
+                            </div>
                         </div>
                     </div>
                     <nav className="dropdown-selecao">

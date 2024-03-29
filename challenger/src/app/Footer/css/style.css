@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Righteous&display=swap');
-
+@media (min-width: 1280px){
 .footer-border-box{
     display: flex;
     align-items: center;
     border: 5px solid #032D60;
-    height: 12rem;
-    margin-left: 200px;
-    margin-right: 200px;
-    padding: 10px;
+    height: 11rem;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding: 6%;
 }
 .nav-footer{
     display: flex;
     gap: 10px;
+    margin: 4%;
+    
 }
 .trailblazers-footer{
     display:flex;
@@ -40,12 +42,13 @@
 }
 .logo-salesforce-footer{
    width: 150px;
-   margin: 50px;
+   margin: 20%;
+   margin-left: -15%;
 }
 .sustentabilidade-footer{
     display:flex;
     align-items: center;
-    border: 5px solid #032D60;
+    justify-content: center;
     background-color: #032D60;
     color: white;
     padding: 8px;
@@ -55,11 +58,20 @@
 }
 .logos-footer{  
 }
+.todas-redesSociais-footer{
+    padding: 5%;
+}
+.youtube-icone{
+    width: 20%;
+    margin-bottom: 3%;
+}
 .instagram-footer{
     color: #032D60;
-    font-size: 50px;
     margin: 5px;
     margin-left: 20px;
+}
+.redes-sociais-icone{
+    width: 20%;
 }
 .facebook-footer{
     color: #032D60;
@@ -72,13 +84,15 @@
     margin: 5px;
 }
 .dropdown-selecao{
-    margin: 10%;
+    margin: 8%;
 }
 .dropdown-menu{
     list-style: none;
 }
 .logoAMR{
-    width: 220px;
-    height: 250px;
+    width: 200%;
+    height: 200%;
     float: right;
+    margin-right: -30%;
+}
 }

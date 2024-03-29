@@ -1,5 +1,5 @@
-import { VscAccount } from "react-icons/vsc";
-import { VscServer } from "react-icons/vsc";
+import barras from "./imgs/barras.png"
+import perfil from "./imgs/perfil.png"
 import { TiZoomOutline } from "react-icons/ti";
 import "./css/Header.css"
 
@@ -9,12 +9,12 @@ const Header = () =>{
             <header>
                 <div className="titulo1-header">
                     <div className="navegacao-header">
-                        <a className="lupa-buscar-header"><VscAccount /></a>
+                        <a><img src={ perfil.src } className="perfil-header"/></a>
                         <div className="estilo-input-header">
                             <input className="input-buscar-header" placeholder="O que você procura?"/>
                             <a className="lupa-header"><TiZoomOutline /></a>
                         </div>
-                        <a className="menu-buscar-header"><VscServer /></a>
+                        <a><img src={ barras.src }  className="barras-header"/></a>
                     </div>
                  
                 </div>

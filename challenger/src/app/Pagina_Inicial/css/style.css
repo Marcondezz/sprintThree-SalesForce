@@ -45,25 +45,28 @@
     margin-left: 100px;
     margin-right: 100px;
 }
-.conjunto-imagens-paginaInicial{
+.secao-imagens{
     display: flex;
     justify-content: center;
+    margin: 3rem;
 }
-.imagens-paginaInicial{
-    padding: 50px;
-}
-.layout-imagem-paginaInicial{
+.teste{
+    width: 10.5rem;
+    height: 11.5rem;
     background-color: #032D60;
-    width: 220px;
-    height: 250px;
     border-radius: 20px;
 }
 .formatacao-imagem-paginaInicial{
-    width: 200px;
+    width: 150px;
+}
+.layout-paginaInicial{
+    display: flex;
+    gap: 4rem;
+}
+.layout-imagem-paginaInicial{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
 }
 .texto-imagem-paginaInicial{
     display: flex;
@@ -71,5 +74,5 @@
     align-items: center;
     font-family: "Righteous", sans-serif;
     color: white;
-    padding: 10px;
+    list-style: none;
 }
