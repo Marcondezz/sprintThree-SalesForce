@@ -54,4 +54,10 @@
     font-family: "Ibarra+Real+Nova";
     padding: 1%;
 }
+.subtitulo-personagens{
+    display: flex;
+    justify-content: center;
+    font-family: "Ibarra+Real+Nova";
+    font-size: 15px;
+}
 }
