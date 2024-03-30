@@ -1,0 +1,297 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Carrossel */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  border: 1px solid black;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background: #000000;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #000000;
+}
+
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.numbertext {
+  color: #00ADB5;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  background: #000000;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/*Menu de Dropdown*/
+.dropbtn {
+  background-color: #00ADB5;
+  color: #000000;
+  font-size: 16px;
+  border: 1px solid black;
+  width: 200px;
+  height: 60px;
+}
+
+.dropdown {
+  float: right;
+  background-color: #00ADB5;
+  width: 201px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+  z-index: 1;
+  border: 1px solid black;
+  cursor: default;
+  width: 200px;
+}
+
+.dropdown-content a {
+  color: #000000;;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: default;
+  width: 200px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #70bdc1;
+}
+
+.cadastro {
+  text-align: center;
+  background-color: #56c1c7;
+  color: #000000;
+  cursor: pointer;
+  width: 200px;
+}
+
+.entrar {
+  text-align: center;
+  background-color: #00ADB5;
+  color: #000000;
+  cursor: pointer;
+  width: 200px;
+
+}
+
+.sus {
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  float: left;
+  margin-top: 1px;
+}
+
+.dame {
+  margin-top: 1px;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  margin-left: 4px;
+  float: left;
+}
+
+.fiap {
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  margin: 1px 4px 0px 4px;
+  float: left;
+}
+
+.textnav {
+  margin-top: 1px;
+  height: 40px;
+  width: 150px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: #ffffff;
+  float: left;
+  cursor: default;
+  vertical-align: middle;
+  margin-right: 4px;
+  padding-top: 10px;
+}
+
+.slogan {
+  margin-top: 1px;
+  height: 40px;
+  width: 400px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  cursor: pointer;
+  background-color: #ffffff;
+  float: left;
+  cursor: default;
+  vertical-align: middle;
+  margin-right: 4px;
+  padding-top: 10px;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.sus:hover {
+  background-color: #EEEEEE;
+}
+
+.dame:hover {
+  background-color: #EEEEEE;
+}
+
+.fiap:hover {
+  background-color: #EEEEEE;
+}
+
+.conteudo1 {
+  width: 100%;
+  background-color: #70bdc1;;
+  float: left;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.conteudo2 {
+  width: 49%;
+  height: 350px;
+  background-color: #EEEEEE;
+  float: left;
+  padding: 20px;
+}
+
+.conteudo3 {
+  width: 49%;
+  height: 350px;
+  background-color: #EEEEEE;
+  float: right;
+  padding: 20px;
+
+}
+
+.conteudo4 {
+  width: 100%;
+  background-color: #EEEEEE;
+  float: left;
+  padding: 20px;
+  margin: 20px 0px;
+}
+
+.cont {
+  background-color: #222831;
+
+
+}
+
+p {
+  background-color: transparent;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+  background-color: transparent;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.telegram {
+  float: right;
+  margin: 1px 40px;
+  background-color: #ffffff;
+  height: 40px;
+  padding: 5px;
+}
+
+.telegram:hover {
+  background-color: #EEEEEE;
+}
+.botoesAgendamento{
+  display: none;
+}

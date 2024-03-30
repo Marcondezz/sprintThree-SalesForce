@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trail Finder (AMR)</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/java.js"></script>
+</head>
+<body>
+
+  <!-- Barra de Navegação e Botões -->
+  <nav>
+    <div class="nav">
+      <div class="textnav">Veja mais:</div>
+      <form>
+        <button class="sus" type="reset" onclick="location.href='https://www.salesforce.com/br/form/signup/freetrial-sales-pe/'">
+          Teste grátis
+        </button>
+        <button class="dame" type="reset"
+          onclick="location.href='https://www.salesforce.com/br/crm/'">
+          CRM?
+        </button>
+        <button class="fiap" type="reset"
+          onclick="location.href='https://www.fiap.com.br/online/graduacao/tecnologo/analise-e-desenvolvimento-de-sistemas/?gad_source=1&gclid=Cj0KCQiAgqGrBhDtARIsAM5s0_kaU96WQ4s-egFVHuLezEcXhcu-5Il-JIN2Pxf3inA1DvMZSjB1-5MaAowlEALw_wcB'">
+          FIAP
+        </button>
+      </form>
+      <div><a href='http://t.me/reciclation_angel_care_bot'><img class="telegram" src="img/img4.png"></a></div>
+    </div>
+  </nav>
+
+  <!-- Carrossel -->
+  <div class="slideshow-container">
+    <!-- imagens do Carrossel -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="img/img1.jpg" style="width:100%">
+      <div class="text">AGILE MANAGEMENT RETURN</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="img/img2.jpg" style="width:100%">
+      <div class="text">FIAP CHALLENGE SPRINT 3</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="img/img3.jpg" style="width:100%">
+      <div class="text">COSMO ESTA AQUI PARA TE AJUDAR</div>
+    </div>
+
+    <!-- Botões de voltar e avançar -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- Script para salvar em Json -->
+  <script>
+    function validarForm() {
+        var nome = document.getElementById("nome").value;
+        var rg = document.getElementById("rg").value;
+        var tipoEmpresa = document.getElementById("tipoEmpresa").value;
+        var setor = document.getElementById("setor").value;
+
+        // Usando Regex que vimos em Python para valiar o RG
+        var rgPattern = /^\d{9}$/;
+
+        if (nome === "" || rg === "" || tipoEmpresa === "" || setor === "") {
+            alert("Por favor, preencha todos os campos.");
+            return false;
+        }
+
+        if (!rgPattern.test(rg)) {
+            alert("O RG que inseriu é inválido, verifique e tente novamente.");
+            return false;
+        }
+
+        // Preparando os dados do formulário para serem salvos em Json
+        var infosCliente = {
+            nome: nome,
+            rg: rg,
+            tipoEmpresa: tipoEmpresa,
+            setor: setor
+        };
+
+        var infosCliente = JSON.stringify(infosCliente);
+
+        // Mostrar os botões de agendamento após enviar o formulário
+        document.getElementById("botoesAgendamento").style.display = "block";
+
+        // Evitar que o formulário seja enviado
+        return false;
+    }
+
+    // Função para mostrar alerta dependendo da opção selecionada pelo cliente
+    function agendarAtendimento() {
+        alert("Seu atendimento pessoal foi agendado. Em breve entraremos em contato com você.");
+    }
+
+    function esperarEmail() {
+        alert("Seu pedido foi registrado. Aguarde por um email nosso em breve.");
+    }
+  </script>
+
+  <!-- Formulário para obter as informações do cliente -->
+  <h2>Nos diga mais sobre você:</h2>
+
+  <!-- Usa a ação de enviar para verificar se o form foi preenchido de forma correta -->
+  <form onsubmit="return validarForm()">
+      <label for="nome">Nome:</label><br>
+      <input type="text" id="nome" name="nome"><br><br>
+
+      <label for="rg">RG (Apenas os Números):</label><br>
+      <input type="text" id="rg" name="rg"><br><br>
+
+      <label for="tipoEmpresa">Tipo de Empresa:</label><br>
+      <select id="tipoEmpresa" name="tipoEmpresa">
+          <option value="">Qual?</option>
+          <option value="Pequena">Pequena</option>
+          <option value="Média">Média</option>
+          <option value="Grande">Grande</option>
+      </select><br><br>
+      
+      <!-- Setores que a Salesforce atende -->
+      <label for="setor">Setor:</label><br>
+      <select id="setor" name="setor">
+          <option value="">Qual?</option>
+          <option value="Automotivo">Automotivo</option>
+          <option value="Comunicações">Comunicações</option>
+          <option value="Bens de Consumo">Bens de Consumo</option>
+          <option value="Educação">Educação</option>
+          <option value="Energia & Utilities">Energia & Utilities</option>
+          <option value="Serviços Financeiros">Serviços Financeiros</option>
+          <option value="Saúde & Ciências da Vida">Saúde & Ciências da Vida</option>
+          <option value="Manufatura">Manufatura</option>
+          <option value="Mídia">Mídia</option>
+          <option value="Sem fins lucrativos">Sem fins lucrativos</option>
+          <option value="Setor Público">Setor Público</option>
+          <option value="Varejo">Varejo</option>
+          <option value="Tecnologia">Tecnologia</option>
+      </select><br><br>
+
+      <input type="button" value="Enviar" onclick="validarForm()">
+  </form>
+
+  <!-- Botões que o usuário pode clicar para escolher que tipo de atendimento vai receber -->
+  <div id="botoesAgendamento" style="display: none;">
+    <input type="button" value="Agendar Atendimento Pessoal" onclick="agendarAtendimento()">
+    <input type="button" value="Esperar Email" onclick="esperarEmail()">
+  </div>
+</body>
+</html>
