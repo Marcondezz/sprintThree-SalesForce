@@ -19,7 +19,7 @@ const Header = () =>{
                  
                 </div>
                 <div className="menu-inicial-header">
-                        <p>PRODUTOS</p>
+                        <p>TRAILFINDER</p>
                         <hr></hr>
                         <p>SUPORTE</p>
                         <hr></hr>

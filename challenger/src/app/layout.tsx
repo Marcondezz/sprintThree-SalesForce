@@ -4,6 +4,7 @@ import Footer from "./Footer/page"
 import Personagens from "./Personagens/page";
 import Pagina_Inicial from "./Pagina_Inicial/page"
 import TrailFinder from "./TrailFinder/Trailfinder"
+import Questionario from "./Questionario/Questionario";
 
 
 
@@ -21,7 +22,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body>
         <Header />
-        <TrailFinder />
+        <Questionario />
         <Footer />
       </body>
     </html>
