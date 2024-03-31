@@ -4,9 +4,9 @@ import opcoes from "./opcoes.json"
 
 
 interface dados{
-    src: String;
+    src: string;
     text: string;
-    href: String;
+    href: string;
 }
 
 const Opcoes = () => {
@@ -15,18 +15,21 @@ const Opcoes = () => {
             <section className="opcoes-section">
                 <div>
                     <div className="layout-opcoes">
-                        <h1 className="titulo-opcoes">TrailHeader</h1>
+                       <Link href="https://trailhead.salesforce.com/pt-BR" target="_blank">
+                        <h1 className="titulo-opcoes">TrailHeader</h1></Link>
                     </div>
                     <div className="layout-opcoes">
-                        <h1 className="titulo-opcoes">SalesForce</h1>
+                        <Link href="https://www.salesforce.com/br/" target="_blank">
+                            <h1 className="titulo-opcoes">SalesForce</h1></Link>
                     </div>
                     <div className="layout-opcoes">
-                        <h1 className="titulo-opcoes">Marketing CLoud</h1>
+                        <Link href="https://www.salesforce.com/br/products/marketing-cloud/overview/" target="_blank">
+                            <h1 className="titulo-opcoes">Marketing Cloud</h1></Link>
                     </div>
                 </div>
             </section>
             <section>
-                <h1 className="titulo-clientes">Veja os clientes da SalesForce</h1>
+                <h1 className="titulo-clientes">Veja os clientes que trabalham com a SalesForce</h1>
                 <div>
                     <div className="imagens-clientes">
                         {opcoes.map ((item : dados) =>(

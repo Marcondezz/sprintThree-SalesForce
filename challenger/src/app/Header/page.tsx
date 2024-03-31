@@ -25,7 +25,7 @@ const Header = () =>{
                             <input className="input-buscar-header" placeholder="O que você procura?"/>
                             <a className="lupa-header"><TiZoomOutline /></a>
                         </div>
-                        <a><img src={ barras.src }  className="barras-header"/></a>
+                        <Link href="/Opcoes"><img src={ barras.src }  className="barras-header"/></Link>
                     </div>
                  
                 </div>

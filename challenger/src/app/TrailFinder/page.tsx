@@ -1,80 +1,60 @@
 'use client'
-import React, { useState, ChangeEvent, FormEvent } from 'react';
+import React, { useState } from "react";
 import "./css/estilo.css";
-import resposta from "./respostas.json"
+import respostaJson from "./respostas.json"; 
 
-interface FormData {
-    [key: string]: string;
-  }
-  
-  const TrailFinder: React.FC = () => {
-    const [formData, setFormData] = useState<FormData>({
+const TrailFinder = () => {
+    const [formData, setFormData] = useState({
         name: '',
         rg: '',
         tipoEmpresa: '',
         setor: ''
     });
-
-    const [errors, setErrors] = useState<FormData>({});
-
-    const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-        const { name, value } = e.target;
-        setFormData(prevState => ({
-            ...prevState,
+    // Pegando informação e inputando novos NOME e VALOR
+    const InputFormulario = (evento:any) => {
+        const { name, value } = evento.target;
+        setFormData(arrayAnterior => ({
+            ...arrayAnterior,
             [name]: value
         }));
     };
 
-    const validarForm = (e: FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        let errors: FormData = {};
+    const SubmissaoFormulario = (evento:any) => {
+        evento.preventDefault(); //evitando o evento padrão do formulário
 
-        if (!formData.name.trim()) {
-            errors.name = 'O nome é obrigatório';
-        }
+        // Pegando informação do formulário e transformando em variável
+        const BuscarInformacao = {
+            name: formData.name,
+            rg: formData.rg,
+            tipoEmpresa: formData.tipoEmpresa,
+            setor: formData.setor
+        };
 
-        if (!formData.rg.trim() || !/^\d+$/.test(formData.rg)) {
-            errors.rg = 'RG inválido';
-        }
+        // adicionando informação ao array sem modificar o array original
+        const AtualizarArray = [...respostaJson, BuscarInformacao];
+        // transformando o array em JSON
+        const FormularioJson = JSON.stringify(AtualizarArray);
 
-        setErrors(errors);
+        //SUBSTITUIÇÃO DO FETCH API
+        const blob = new Blob([FormularioJson], { type: "application/json" });//Usando BLOB para substituir o uso do FETCH API
+        const url = URL.createObjectURL(blob); //Criando uma URL para download 
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'dados_formularios.json'; //Fazendo o Download
+        link.click(); //Pegando o click para realizar o Download
 
-        // Se não houver erros, você pode enviar o formulário
-        if (Object.keys(errors).length === 0) {
-            console.log('Formulário válido:', formData);
-            const respostaJSON = {
-                status: 'success',
-                message: 'Formulário enviado com sucesso!'
-            };
-            console.log('Resposta em JSON:', respostaJSON);
 
-            // Recuperando respostas do localStorage ou criando um array vazio
-            const respostasJSON = localStorage.getItem('respostas');
-            const respostas: { resposta: { status: string; message: string; } }[] = respostasJSON ? JSON.parse(respostasJSON) : [];
-
-            // Adicionando a resposta atual ao array de respostas
-            const updatedRespostas = respostas.concat({ resposta: respostaJSON });
-
-            // Atualizando o arquivo JSON com as novas respostas
-            const updatedRespostaJSON = JSON.stringify(updatedRespostas);
-            localStorage.setItem('respostas', updatedRespostaJSON);
-
-            // Limpar o formulário após o envio bem-sucedido
-            setFormData({
-                name: '',
-                rg: '',
-                tipoEmpresa: '',
-                setor: ''
-            });
-        } else {
-            console.log('Formulário inválido');
-        }
+        setFormData({
+            name: '',
+            rg: '',
+            tipoEmpresa: '',
+            setor: ''
+        });
     };
 
-
     return (
-        <section className='secao-total'>
-            <form className="form card" onSubmit={validarForm}>
+        <section className="secao-total">
+            <form className="form card" onSubmit={SubmissaoFormulario}>
                 <div className="card_header">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                         <path fill="none" d="M0 0h24v24H0z"></path>
@@ -82,29 +62,23 @@ interface FormData {
                     </svg>
                     <h1 className="form_heading">TrailFinder</h1>
                 </div>
-
                 <div className="field">
                     <label htmlFor="name">Nome</label>
-                    <input className="input" name="name" type="text" placeholder="Nome" id="name" value={formData.name} onChange={handleChange} />
-                    {errors.name && <span className="error">{errors.name}</span>}
+                    <input className="input" name="name" type="text" placeholder="Nome" id="name" value={formData.name} onChange={InputFormulario} />
                 </div>
-
                 <div className="field">
                     <label htmlFor="rg">RG</label>
-                    <input className="input" placeholder="RG" id="rg" name="rg" value={formData.rg} onChange={handleChange} />
-                    {errors.rg && <span className="error">{errors.rg}</span>}
+                    <input className="input" placeholder="RG" id="rg" name="rg" value={formData.rg} onChange={InputFormulario} />
                 </div>
                 <label htmlFor="tipoEmpresa">Tipo de Empresa:</label>
-
-                <select id="tipoEmpresa" name="tipoEmpresa" value={formData.tipoEmpresa} onChange={handleChange}>
+                <select id="tipoEmpresa" name="tipoEmpresa" value={formData.tipoEmpresa} onChange={InputFormulario}>
                     <option value="">Qual?</option>
                     <option value="Pequena">Pequena</option>
                     <option value="Média">Média</option>
                     <option value="Grande">Grande</option>
                 </select>
-
                 <label htmlFor="setor">Setor:</label>
-                <select id="setor" name="setor" value={formData.setor} onChange={handleChange}>
+                <select id="setor" name="setor" value={formData.setor} onChange={InputFormulario}>
                     <option value="">Qual?</option>
                     <option value="Automotivo">Automotivo</option>
                     <option value="Comunicações">Comunicações</option>
@@ -120,11 +94,12 @@ interface FormData {
                     <option value="Varejo">Varejo</option>
                     <option value="Tecnologia">Tecnologia</option>
                 </select>
-                <div className="field-button">
-                    <button className="button" type="submit">Enviar</button>
+                <div className="field">
+                    <button className="button-trailfinder" type="submit">ENVIE</button>
                 </div>
             </form>
-            </section>
-    );
+        </section>
+    )
 }
+
 export default TrailFinder;

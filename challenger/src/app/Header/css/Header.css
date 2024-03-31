@@ -71,3 +71,11 @@
     white-space: nowrap;
     list-style: none;
 }
+.lista-header:visited{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+    white-space: nowrap;
+    list-style: none;
+}

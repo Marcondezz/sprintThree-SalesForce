@@ -6,6 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
 .card {
   width: 25%;
   height: 20%;
@@ -30,7 +31,13 @@
   margin-bottom: 20px;
   margin-right: 5px;
 }
-
+.button-trailfinder{
+  margin-left: 20%;
+  width: 150px;
+  border-radius: 10px;
+  font-family: "Righteous";
+  background-color: #032d60;
+}
 .form_heading {
   padding-bottom: 20px;
   font-size: 21px;
@@ -42,10 +49,7 @@
   padding-bottom: 10px;
 }
 .field-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 17%;
+  margin-left: 500px;
 }
 .field-button:hover{
   color: #032d60;
@@ -94,5 +98,5 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5%;
+  margin: 3% 5%;
 }
