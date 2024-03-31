@@ -23,7 +23,7 @@ const Personagens = () => {
                             <h1 className="titulo-esquerda-personagens">Einstein</h1>
                             <h2 className="subtitulo-personagens"><b>O gênio de todos</b></h2>
                             <p className="texto-esquerda">Einstein é o cientista de dados da Salesforce. Nasceu em 2016 e foi criado com base em um dos maiores gênios da história mundial.
-                                 Além de super rápido, ele é o cérebro por trás da inteligência artificial da empr. 
+                                 Além de super rápido, ele é o cérebro por trás da inteligência artificial da empresa. 
                                  Tem um prod que leva seu nome: 
                                  uma plataforma unificada que identifica oportunidades de vendas, prevê resultados e 
                                  faz recomendações inteligentes. </p>
