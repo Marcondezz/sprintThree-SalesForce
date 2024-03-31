@@ -19,7 +19,7 @@ const Footer = () => {
                 </div>
             <div className="nav-footer">
             <div>
-                <Link href="/TrailFinder"><p className="trailblazers-footer">Trailfinder</p></Link>
+                <Link href="/TrailFinder"><p className="trailblazers-footer">Trailfinders</p></Link>
                 <Link href="/Pagina_Inicial"><p className="contato-footer">Inicial</p></Link>
             </div>
                 <div className="logos-footer">
