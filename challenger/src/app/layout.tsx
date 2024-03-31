@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
 import Header from "./Header/page"
 import Footer from "./Footer/page"
-import Personagens from "./Personagens/page";
-import Pagina_Inicial from "./Pagina_Inicial/page"
-import TrailFinder from "./TrailFinder/Trailfinder"
-import Questionario from "./Questionario/Questionario";
-import Desenvolvedores from "./Desenvolvedores/Desenvolvedores";
+
 
 
 
@@ -23,7 +19,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body>
         <Header />
-        <Pagina_Inicial />
+        {children}
         <Footer />
       </body>
     </html>

@@ -2,12 +2,12 @@
     {
         "id" : 1,
         "name" : "PÁGINA INICIAL",
-        "href" : "/Pagina_Inicial"
+        "href" : "/"
     },
     {
         "id" : 2,
         "name" : "TRAIL FINDER",
-        "href" : "/Trailfinder.tsx"
+        "href" : "/Questionario"
     },
     {
         "id" : 3,

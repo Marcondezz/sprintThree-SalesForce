@@ -1,7 +1,7 @@
+'use client'
 import "./css/style.css"
 import imagem from "./imgs/crm.png"
 import Link from "next/link"
-import TrailFinder from "../TrailFinder/Trailfinder"
 
 
 const Questionario = () => {
@@ -18,7 +18,9 @@ const Questionario = () => {
                         <h3 className="texto-questionario">Faça o teste agora mesmo!</h3>
                         </div>
                         <div className="edicao-botao-questionario">
-                           <Link href={"/app/TrailFinder/Trailfinder.tsx"}><button className="botao-questionario" ><b>Questionário</b></button></Link>
+                           <Link href={"/TrailFinder"}>
+                            <button className="botao-questionario" ><b>Questionário</b>
+                            </button></Link>
                         </div>
                     </div>
                 </div>

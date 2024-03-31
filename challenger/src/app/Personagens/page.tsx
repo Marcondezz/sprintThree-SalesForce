@@ -10,6 +10,8 @@ import Ruth from "/public/assets/Personagens_PI/ruth.png"
 import Blaze from "/public/assets/Personagens_PI/blaze.png"
 import Koa from "/public/assets/Personagens_PI/koa.png"
 
+//--------------------------------------------------------------------
+
 const Personagens = () => {
     return(
     <>  

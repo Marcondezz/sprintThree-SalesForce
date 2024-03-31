@@ -1,10 +1,12 @@
 import barras from "./imgs/barras.png"
 import perfil from "./imgs/perfil.png"
+import Link from "next/link";
+import dados from "./links.json"
 import { TiZoomOutline } from "react-icons/ti";
 import "./css/Header.css"
-import Link from "next/link";
 import "../Pagina_Inicial/page"
-import dados from "./links.json"
+
+//-----------------------------------------------------
 
 interface Dados{
     id: number;
@@ -18,7 +20,7 @@ const Header = () =>{
             <header>
                 <div className="titulo1-header">
                     <div className="navegacao-header">
-                        <a><img src={ perfil.src } className="perfil-header"/></a>
+                        <Link href="/Questionario"><img src={ perfil.src } className="perfil-header"/></Link>
                         <div className="estilo-input-header">
                             <input className="input-buscar-header" placeholder="O que você procura?"/>
                             <a className="lupa-header"><TiZoomOutline /></a>

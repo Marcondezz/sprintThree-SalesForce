@@ -15,15 +15,15 @@ const Footer = () => {
         <footer>
             <div className="footer-border-box">
                 <div>
-                    <a><img src={salesforce.src} alt="logo Sales Force" className="logo-salesforce-footer"/></a>
+                    <Link href="https://www.salesforce.com/br/" target="_blank"><img src={salesforce.src} alt="logo Sales Force" className="logo-salesforce-footer"/></Link>
                 </div>
             <div className="nav-footer">
             <div>
-                <p className="trailblazers-footer">TrailFinder</p>
-                <p className="contato-footer">Inicial</p>
+                <Link href="/TrailFinder"><p className="trailblazers-footer">TrailFinder</p></Link>
+                <Link href="/Pagina_Inicial"><p className="contato-footer">Inicial</p></Link>
             </div>
                 <div className="logos-footer">
-                <p className="sustentabilidade-footer">Desenvolvedores</p>
+                    <Link href="/Desenvolvedores"><p className="sustentabilidade-footer">Desenvolvedores</p></Link>
                         <div className="todas-redesSociais-footer">
                             <Link href="https://www.instagram.com/salesforcebrasil/" target="_blank" className="instagram-footer">
                                 <img src={ Instagram.src } className="redes-sociais-icone"/>

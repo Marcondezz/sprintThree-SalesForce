@@ -41,6 +41,15 @@
 .field {
   padding-bottom: 10px;
 }
+.field-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 17%;
+}
+.field-button:hover{
+  color: #032d60;
+}
 
 .input {
   border-radius: 5px;
@@ -67,11 +76,15 @@ label {
 }
 
 button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #032d60;
-
+  background-color: #7878bd;
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 7px 12px;
+  height: auto;
+  font-weight: 500;
+  color: white;
+  border: none;
+  margin-left: 10%;
 }
 
 button:hover {
