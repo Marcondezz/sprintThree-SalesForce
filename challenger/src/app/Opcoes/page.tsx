@@ -29,7 +29,7 @@ const Opcoes = () => {
                 </div>
             </section>
             <section>
-                <h1 className="titulo-clientes">Veja os cliente que trabalham com a SalsForce</h1>
+                <h1 className="titulo-clientes">Veja os cliente que trabalham com a Salesforce</h1>
                 <div>
                     <div className="imagens-clientes">
                         {opcoes.map ((item : dados) =>(
