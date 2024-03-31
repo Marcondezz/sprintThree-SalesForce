@@ -38,7 +38,7 @@ const Personagens = () => {
                     <div className="texto-direita-personagens">
                         <h1 className="titulo-direita-personagens">APPY</h1>
                         <h2 className="subtitulo-personagens"><b>Sua gua no ecossistema de parceiros</b></h2>
-                        <p className="texto-direita">A Appy representa ISVs, parceiros e ApExchange. Ela surgiu em 2017, sabe muito sobre todas as coisas da
+                        <p className="texto-direita">A Appy representa ISVs, parceiros e AppExchange. Ela surgiu em 2017, sabe muito sobre todas as coisas da
                          Salesforce e é a mascote certa para ajudar na navegação do ecossistema do AppExchange para resolver desafios de negócios </p>
                         <p className="texto-direita">Ela também é considerada um conector, pois se não souber a resposta, ela usa sua extensa rede para conectar 
                         as pessoas certas e resolver seus problemas. 
