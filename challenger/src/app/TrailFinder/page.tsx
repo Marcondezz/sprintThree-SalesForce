@@ -77,7 +77,7 @@ const TrailFinder = () => {
                     <option value="Média">Média</option>
                     <option value="Grande">Grande</option>
                 </select>
-                <label htmlFor="setor">Setor da sua empresa:</label>
+                <label htmlFor="setor">Qual o setor da sua empresa:</label>
                 <select id="setor" name="setor" value={formData.setor} onChange={InputFormulario}>
                     <option value="">Qual?</option>
                     <option value="Automotivo">Automotivo</option>
