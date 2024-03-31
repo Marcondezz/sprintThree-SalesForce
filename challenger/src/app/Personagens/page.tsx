@@ -33,7 +33,6 @@ const Personagens = () => {
                                 Outros produtos que ele oferece são o Einstein Sales Cloud e Einstein Analytics.</p>
                     </div>
                 </div>
-                <div></div>
                 <br />
                 <div className="conjunto-propositos-personagens">
                     <div className="texto-direita-personagens">
