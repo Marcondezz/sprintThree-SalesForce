@@ -8,7 +8,6 @@ interface dados{
     id: number;
     src: string;
     text: string;
-    external: string;
 }
 const Pagina_Inicial = () => {
     return(
@@ -29,7 +28,7 @@ const Pagina_Inicial = () => {
                                 <div className="teste">
                                     <a className="layout-imagem-paginaInicial"><img className="formatacao-imagem-paginaInicial" src={item1.src} /></a>
                                     <ul className="texto-imagem-paginaInicial">
-                                        <Link href='https://www.youtube.com/'><li>{item1.text}</li></Link>
+                                        <Link href='https://www.youtube.com/'><li className="texto-imagem">{item1.text}</li></Link>
                                     </ul>
                                 </div>
                             </div> ))}
@@ -43,7 +42,7 @@ const Pagina_Inicial = () => {
                                 <div className="teste">
                                     <a className="layout-imagem-paginaInicial"><img className="formatacao-imagem-paginaInicial" src={item2.src} /></a>
                                     <ul className="texto-imagem-paginaInicial">
-                                        <Link href='https://www.youtube.com/'><li>{item2.text}</li></Link>
+                                        <Link href='challenger/src/app/Personagens/page.tsx'><li className="texto-imagem">{item2.text}</li></Link>
                                     </ul>
                                 </div>
                             </div>

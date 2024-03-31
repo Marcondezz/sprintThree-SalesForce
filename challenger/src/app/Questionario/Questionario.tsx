@@ -1,5 +1,8 @@
 import "./css/style.css"
 import imagem from "./imgs/crm.png"
+import Link from "next/link"
+import TrailFinder from "../TrailFinder/Trailfinder"
+
 
 const Questionario = () => {
     return(
@@ -12,9 +15,10 @@ const Questionario = () => {
                         <h2 className="texto-questionario">O Trail Finder é um questionário onde o usuário responderá perguntas que descrevem suas principais características, 
                         como por exemplo, o tamanho da empresa e o ramo de atuação. Vamos coletar esses dados e como resultado desse questionário 
                         mostrar cards com as melhores ferramentas e serviços, além de sugerir uma solução para o problema apresentado.</h2>
+                        <h3 className="texto-questionario">Faça o teste agora mesmo!</h3>
                         </div>
                         <div className="edicao-botao-questionario">
-                            <button className="botao-questionario" type="submit"><b>Questionário</b></button>
+                           <Link href={"/app/TrailFinder/Trailfinder.tsx"}><button className="botao-questionario" ><b>Questionário</b></button></Link>
                         </div>
                     </div>
                 </div>

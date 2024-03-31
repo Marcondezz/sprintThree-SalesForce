@@ -1,0 +1,155 @@
+*{
+    padding:0;
+    margin:0;
+    border:0   
+}
+main{
+    display: flex;
+    justify-content: center;
+    background-color: #04101c;
+    height: 88vh;
+}
+.container_principal{
+    width: 400px;
+    background-color: #FF4F00;
+    height: 80vh;
+    margin-top: 30px;
+    border-radius: 5%;
+}
+
+.container-login {
+  max-width: 350px;
+  background-color: #F8F9FD;
+  background-color: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%);
+  border-radius: 40px;
+  padding: 25px 35px;
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
+  margin: 20px;
+
+}
+
+.heading-login {
+  text-align: center;
+  font-weight: 900;
+  font-size: 30px;
+  color: #04101c;
+}
+
+.form {
+  margin-top: 20px;
+  
+}
+
+.form .input-EmailSenha {
+    position: relative;
+    left: 19px; 
+  width: 80%;
+  background: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 20px;
+  margin-top: 15px;
+  box-shadow: #cff0ff 0px 10px 10px -5px;
+  border-inline: 2px solid transparent;
+}
+
+.form .input-EmailSenha::-moz-placeholder {
+  color: rgb(170, 170, 170);
+}
+
+.form .input-EmailSenha::placeholder {
+  color: rgb(170, 170, 170);
+}
+
+.form .input-EmailSenha:focus {
+  outline: none;
+  border-inline: 2px solid #12B1D1;
+}
+
+
+
+.form .b_enviar {
+  display: block;
+  width: 95%;
+  font-weight: bold;
+  color: #04101c;
+  padding-block: 15px;
+  margin: 20px auto;
+  border-radius: 20px;
+  background: rgb(255,245,240);
+background: linear-gradient(90deg, rgba(255,245,240,1) 0%, rgba(255,84,0,1) 50%, rgba(255,255,255,1) 100%);
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.form .b_enviar:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 23px 10px -20px;
+}
+
+.form .b_enviar:active {
+  transform: scale(0.95);
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 15px 10px -10px;
+}
+.container-dois {
+  margin-top: 25px;
+}
+
+.container-dois .title {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  color: #04101c;
+}
+
+.container-dois .social-accounts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.container-dois .social-accounts .social-button {
+  background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(112, 112, 112) 100%);
+  border: 5px solid white;
+  padding: 5px;
+  border-radius: 50%;
+  width: 40px;
+  aspect-ratio: 1;
+  display: grid;
+  place-content: center;
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 12px 10px -8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.container-dois .social-accounts .social-button .svg {
+  fill: white;
+  margin: auto;
+}
+
+.container-dois .social-accounts .social-button:hover {
+  transform: scale(1.2);
+}
+
+.container-dois .social-accounts .social-button:active {
+  transform: scale(0.9);
+}
+
+.agreement {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.agreement a {
+  text-decoration: none;
+  color: #04101c;
+  font-size: 10px;
+}
+.b_enviar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -77,4 +77,10 @@
     color: white;
     list-style: none;
 }
+.texto-imagem{
+    color: white;
+}
+.texto-imagem:visited{
+    color: white;
+}
 }

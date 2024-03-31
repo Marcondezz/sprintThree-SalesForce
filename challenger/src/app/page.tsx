@@ -1,13 +1,12 @@
 import "./css/style.css"
-import PAGINA_INICIAL from "./Pagina_Inicial/page"
+import Pagina_inicial from "./Pagina_Inicial/page"
+import Personagens from "./Personagens/page"
 
 
 const Home = () =>{
     return(
       <>
-        <main>
-          <PAGINA_INICIAL />
-        </main>
+    
       </>
     )
   }

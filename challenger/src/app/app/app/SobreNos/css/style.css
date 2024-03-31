@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Madimi+One&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    border:0   
+}
+
+.div1-SobreNos{
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    
+}
+.quadrado{
+    width: 50%;
+    height: 50%;
+    border-radius: 18px;
+    background-color: #757575;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    padding: 20px;
+    font-size: 25px;
+}
+.titulo_sobrenos{
+    font-size: 80px;
+    font-family: "Ibarra Real Nova", serif;
+}
+.texto_sobrenos{
+    padding: 10px;
+    font-family: "Fredoka", sans-serif;
+}
+.botao-sobrenos{
+    width: 20%;
+    height: 2rem;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    border: #FF4F00 solid 3px;
+    text-decoration: none;
+}
+.botao-:hover{
+    background-color: #FF4F00;
+    cursor: pointer;
+}
+.integrantes_grupo{
+    font-family: "Fredoka", sans-serif; 
+}
+.botao-pagina_inicial{
+    list-style-type: none;
+    text-decoration: none;
+}

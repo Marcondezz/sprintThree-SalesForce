@@ -51,6 +51,7 @@
 .menu-inicial-header{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 2%;
     font-family: "Righteous", sans-serif;
 }
@@ -61,4 +62,12 @@
 .perfil-header{
     width: 40px;
     margin-left: 1rem;
+}
+.lista-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+    white-space: nowrap;
+    list-style: none;
 }

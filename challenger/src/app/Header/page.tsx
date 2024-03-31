@@ -2,6 +2,15 @@ import barras from "./imgs/barras.png"
 import perfil from "./imgs/perfil.png"
 import { TiZoomOutline } from "react-icons/ti";
 import "./css/Header.css"
+import Link from "next/link";
+import "../Pagina_Inicial/page"
+import dados from "./links.json"
+
+interface Dados{
+    id: number;
+    name: string;
+    href: string;
+}
 
 const Header = () =>{
     return(
@@ -18,12 +27,17 @@ const Header = () =>{
                     </div>
                  
                 </div>
-                <div className="menu-inicial-header">
-                        <p>TRAILFINDER</p>
-                        <hr></hr>
-                        <p>SUPORTE</p>
-                        <hr></hr>
-                        <p>EMPRESA</p>
+                    <div className="menu-inicial-header">
+                        <ul className="lista-header">
+                            {
+                                dados.map((link:Dados) =>(
+                                    <li>
+                                        <Link href={ link.href }>{ link.name }</Link>
+                                    </li>
+                                    
+                                ))
+                            }
+                        </ul>
                 </div>
             </header>
         </>
