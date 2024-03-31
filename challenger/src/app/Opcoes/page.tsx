@@ -16,7 +16,7 @@ const Opcoes = () => {
                 <div>
                     <div className="layout-opcoes">
                        <Link href="https://trailhead.salesforce.com/pt-BR" target="_blank">
-                        <h1 className="titulo-opcoes">Traileader</h1></Link>
+                        <h1 className="titulo-opcoes">Trailfinder</h1></Link>
                     </div>
                     <div className="layout-opcoes">
                         <Link href="https://www.salesforce.com/br/" target="_blank">
