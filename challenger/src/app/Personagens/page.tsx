@@ -28,9 +28,9 @@ const Personagens = () => {
                                  uma plataforma unificada que identifica oportunidades de vendas, prevê resultados e 
                                  faz recomendações inteligentes. </p>
                             <p className="texto-esquerda">É um eterno solucionador de problemas e ajuda você a aprender mais sobre seus clientes. 
-                                 Brilhante e altrsta, 
-                                 Einstein eá sempre pronto para ajudá-lo a se tornar mais experiente e inovador. 
-                                Outros produtos que ele oferece são o Einstein Autome e Einstein Analytics.</p>
+                                 Brilhante e altruista, 
+                                 Einstein está sempre pronto para ajudá-lo a se tornar mais experiente e inovador. 
+                                Outros produtos que ele oferece são o Einstein Sales Cloud e Einstein Analytics.</p>
                     </div>
                 </div>
                 <div></div>
