@@ -27,7 +27,6 @@ const Opcoes = () => {
                             <h1 className="titulo-opcoes">Marketing Cloud</h1></Link>
                     </div>
                 </div>
-                <div></div>
             </section>
             <section>
                 <h1 className="titulo-clientes">Veja os cliente que trabalham com a SalsForce</h1>
