@@ -13,7 +13,6 @@ const Pagina_Inicial = () => {
     return(
         <>
                  <div className="paginaInicial-main">
-                    <div></div>
                     <h1 className="titulo-main">Quem é a Salesforce?</h1>
                     <div className="divOne-paginaInicial">
                         <p className="texto-paginaInicial">A Saleforce é uma empresa de softwares que foca na solução de gerenciamento de relacionamento para aproximar empresas e pessoas. 
