@@ -63,11 +63,11 @@ const TrailFinder = () => {
                     <h1 className="form_heading">TrailFinder</h1>
                 </div>
                 <div className="field">
-                    <label htmlFor="name">Nome</label>
+                    <label htmlFor="name">Qual é o seu Nome</label>
                     <input className="input" name="name" type="text" placeholder="Nome" id="name" value={formData.name} onChange={InputFormulario} />
                 </div>
                 <div className="field">
-                    <label htmlFor="rg">RG</label>
+                    <label htmlFor="rg">Qual é seu RG</label>
                     <input className="input" placeholder="RG" id="rg" name="rg" value={formData.rg} onChange={InputFormulario} />
                 </div>
                 <label htmlFor="tipoEmpresa">Qual o tipo da sua Empresa:</label>
