@@ -19,11 +19,12 @@ const Footer = () => {
                 </div>
             <div className="nav-footer">
             <div>
-                <Link href="/TrailFinder"><p className="trailblazers-footer">TrailFinder</p></Link>
+                <Link href="/TrailFinder"><p className="trailblazers-footer">Trail</p></Link>
                 <Link href="/Pagina_Inicial"><p className="contato-footer">Inicial</p></Link>
             </div>
+            <div></div>
                 <div className="logos-footer">
-                    <Link href="/Desenvolvedores"><p className="sustentabilidade-footer">Desenvolvedores</p></Link>
+                    <Link href="/Desenvolvedores"><p className="sustentabilidade-footer">Desenvo</p></Link>
                         <div className="todas-redesSociais-footer">
                             <Link href="https://www.instagram.com/salesforcebrasil/" target="_blank" className="instagram-footer">
                                 <img src={ Instagram.src } className="redes-sociais-icone"/>
