@@ -22,7 +22,6 @@ const Footer = () => {
                 <Link href="/TrailFinder"><p className="trailblazers-footer">Trailfinder</p></Link>
                 <Link href="/Pagina_Inicial"><p className="contato-footer">Inicial</p></Link>
             </div>
-            <div>
                 <div className="logos-footer">
                     <Link href="/Desenvolvedores"><p className="sustentabilidade-footer">Desenvo</p></Link>
                         <div className="todas-redesSociais-footer">
