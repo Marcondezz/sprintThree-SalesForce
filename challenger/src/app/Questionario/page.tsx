@@ -1,4 +1,5 @@
 'use client'
+import React from "react";
 import "./css/style.css"
 import imagem from "./imgs/crm.png"
 import Link from "next/link"

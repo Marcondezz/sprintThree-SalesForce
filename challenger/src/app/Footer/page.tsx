@@ -1,3 +1,5 @@
+'use client'
+import React from "react";
 import "./css/style.css"
 import Instagram from "./imgs/instagram.png"
 import Facebook from "./imgs/facebook.png"

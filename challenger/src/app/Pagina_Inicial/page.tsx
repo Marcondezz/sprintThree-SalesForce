@@ -1,3 +1,5 @@
+'use client'
+import React from "react";
 import "./css/style.css";
 import product_family from "./imgs/product-family.png";
 import dados1 from "./imgs-paginaInicial1.json"

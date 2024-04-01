@@ -1,3 +1,5 @@
+'use client'
+import React from "react";
 import barras from "./imgs/barras.png"
 import perfil from "./imgs/perfil.png"
 import lupa from "./imgs/lupa.png"

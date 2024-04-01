@@ -1,3 +1,5 @@
+'use client'
+import React from "react";
 import "./css/Personagens.css"
 import Einstein from "/public/assets/Personagens_PI/einstein.png"
 import Appy from "/public/assets/Personagens_PI/appy.png"
