@@ -27,7 +27,6 @@ const Header = () =>{
                         </div>
                         <Link href="/Opcoes"><img src={ barras.src }  className="barras-header"/></Link>
                     </div>
-                 
                 </div>
                     <div className="menu-inicial-header">
                         <ul className="lista-header">

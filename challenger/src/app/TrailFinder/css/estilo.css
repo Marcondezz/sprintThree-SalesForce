@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Righteous&display=swap');
 
+@media (min-width: 800px) and (max-width: 1400px){
 *{
   margin: 0;
   padding: 0;
@@ -99,4 +100,11 @@ button:hover {
   justify-content: center;
   align-items: center;
   margin: 3% 5%;
+}
+}
+@media (min-width: 450px) and (max-width: 799px){
+
+}
+@media screen and (max-width: 449px){
+
 }

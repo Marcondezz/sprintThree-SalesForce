@@ -84,11 +84,9 @@
     color: white;
 }
 }
-@media (min-width:640px) and (max-width: 799px){
-    .texto-paginaInicial{
-        width: 400px;
-    }
-    .imagem-div1-main{
-        width: 50px;
-    }
+@media (min-width: 450px) and (max-width: 799px){
+
+}
+@media screen and (max-width: 449px){
+
 }
