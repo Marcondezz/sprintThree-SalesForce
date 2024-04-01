@@ -1,8 +1,8 @@
 import barras from "./imgs/barras.png"
 import perfil from "./imgs/perfil.png"
+import lupa from "./imgs/lupa.png"
 import Link from "next/link";
 import dados from "./links.json"
-import { TiZoomOutline } from "react-icons/ti";
 import "./css/Header.css"
 import "../Pagina_Inicial/page"
 
@@ -23,7 +23,7 @@ const Header = () =>{
                         <Link href="/Questionario"><img src={ perfil.src } className="perfil-header"/></Link>
                         <div className="estilo-input-header">
                             <input className="input-buscar-header" placeholder="O que você procura?"/>
-                            <a className="lupa-header"><TiZoomOutline /></a>
+                            <a className="lupa-header"><img src={ lupa.src } className="lupa-header"/></a>
                         </div>
                         <Link href="/Opcoes"><img src={ barras.src }  className="barras-header"/></Link>
                     </div>

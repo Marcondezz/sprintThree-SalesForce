@@ -40,6 +40,9 @@
 .lupa-header{
     color: white;
     font-size: 30px;
+    width: 1.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
 }
 .input-buscar input:focus-visible {
     outline: none;
