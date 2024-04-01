@@ -63,21 +63,21 @@ const TrailFinder = () => {
                     <h1 className="form_heading">TrailFinder</h1>
                 </div>
                 <div className="field">
-                    <label htmlFor="name">Nome</label>
+                    <label htmlFor="name">Qual é o seu Nome</label>
                     <input className="input" name="name" type="text" placeholder="Nome" id="name" value={formData.name} onChange={InputFormulario} />
                 </div>
                 <div className="field">
-                    <label htmlFor="rg">RG</label>
+                    <label htmlFor="rg">Qual é seu RG</label>
                     <input className="input" placeholder="RG" id="rg" name="rg" value={formData.rg} onChange={InputFormulario} />
                 </div>
-                <label htmlFor="tipoEmpresa">Tipo de Empresa:</label>
+                <label htmlFor="tipoEmpresa">Qual o tipo da sua Empresa:</label>
                 <select id="tipoEmpresa" name="tipoEmpresa" value={formData.tipoEmpresa} onChange={InputFormulario}>
                     <option value="">Qual?</option>
                     <option value="Pequena">Pequena</option>
                     <option value="Média">Média</option>
                     <option value="Grande">Grande</option>
                 </select>
-                <label htmlFor="setor">Setor:</label>
+                <label htmlFor="setor">Qual o setor da sua empresa:</label>
                 <select id="setor" name="setor" value={formData.setor} onChange={InputFormulario}>
                     <option value="">Qual?</option>
                     <option value="Automotivo">Automotivo</option>

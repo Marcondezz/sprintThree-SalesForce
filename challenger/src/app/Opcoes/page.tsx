@@ -16,7 +16,7 @@ const Opcoes = () => {
                 <div>
                     <div className="layout-opcoes">
                        <Link href="https://trailhead.salesforce.com/pt-BR" target="_blank">
-                        <h1 className="titulo-opcoes">Traileader</h1></Link>
+                        <h1 className="titulo-opcoes">Trailfinder</h1></Link>
                     </div>
                     <div className="layout-opcoes">
                         <Link href="https://www.salesforce.com/br/" target="_blank">
@@ -27,10 +27,9 @@ const Opcoes = () => {
                             <h1 className="titulo-opcoes">Marketing Cloud</h1></Link>
                     </div>
                 </div>
-                <div></div>
             </section>
             <section>
-                <h1 className="titulo-clientes">Veja os cliente que trabalham com a SalsForce</h1>
+                <h1 className="titulo-clientes">Veja os cliente que trabalham com a Salesforce</h1>
                 <div>
                     <div className="imagens-clientes">
                         {opcoes.map ((item : dados) =>(

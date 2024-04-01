@@ -12,12 +12,12 @@ interface dados{
 const Pagina_Inicial = () => {
     return(
         <>
+        
                  <div className="paginaInicial-main">
-                    <div></div>
-                    <h1 className="titulo-main">Quem é a SalesForce?</h1>
+                    <h1 className="titulo-main">Quem é a Salesforce?</h1>
                     <div className="divOne-paginaInicial">
-                        <p className="texto-paginaInicial">A SaleForce é uma empresa de softwares que foca na solução de gerenciamento de relacionamnto para aproximar empresas e pessoas. 
-                            É um platafora de CRM integrada que oferece a todos os departamentos uma vião única e compartilhaa de cada clinte.</p>
+                        <p className="texto-paginaInicial">A Saleforce é uma empresa de softwares que foca na solução de gerenciamento de relacionamento para aproximar empresas e pessoas. 
+                            É um platafora de CRM integrada que oferece a todos os departamentos uma vião única e compartilhada de cada cliente.</p>
                         <a><img src={product_family.src} className="imagem-div1-main"/></a>
                     </div>
                     </div>
@@ -50,7 +50,7 @@ const Pagina_Inicial = () => {
                         ))}
                         </div>
                     </section>
-
+            
 
         </>
     )
